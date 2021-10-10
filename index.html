@@ -12,29 +12,127 @@
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-  <header class="header container">
-    <a href="/">
-    <img src="img/logo.svg" alt="logo">
-    </a>
-    <nav class="nav">
-      <ul class="menu">
-        <li class="menu-item">
-          <a href="#" class="menu-link">Главная</a>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Фильмы</a>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Кинотеатры</a>
-        <li class="menu-item">
-          <a href="#" class="menu-link">События</a>
-        <li class="menu-item">
-          <a href="#" class="menu-link">Поддержка</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="user">
-      <span class="">Привет, Пётр</span>
-      <img class="avatar" src="img/avatar.jpg" alt="">
+  <header class="header">
+    <div class="navbar  container">
+      <a href="/">
+        <img src="img/logo.svg" alt="logo">
+        </a>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">Главная</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Фильмы</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Кинотеатры</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">События</a>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Поддержка</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user">
+          <span class="">Привет, Пётр</span>
+          <img class="avatar" src="img/avatar.jpg" alt="">
+        </div>
     </div>
+    <!-- /.navbar -->
+    <div class="film container">
+      <div class="film-info">
+        <small class="film-title-small">Avengers: Infinity War</small>
+        <h1 class="film-title">Мстители: война бесконечности</h1>
+        <p class="film-discription">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+        </p>
+        <div class="film-details">
+          <div class="time">
+            <img src="img/clock 1.svg" alt="" class="time-icon">
+            <span class="time-counter">240 мин</span>
+          </div>
+          <div class="rating">
+            <img src="img/imdb.png" alt="" class="rating-icon">
+            <span class="rating-counter">
+              <strong class="rating-current">9.2</strong> / 10
+            </span>
+          </div>
+        </div>
+        <!-- /.film-details -->
+      </div>
+      <!-- /.film-info -->
+      <a href="#" class="film-trailer">
+        <svg 
+        width="100" 
+        height="100" 
+        viewBox="0 0 100 100" 
+        fill="none"        
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="50" fill="white"/>
+        <g clip-path="url(#clip0)">
+        <path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+        </g>
+        <defs>
+        <clipPath id="clip0">
+        <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        </a>
+      <!-- /.film-trailer -->
+    </div>
+    <!-- /.film -->
+    <div class="session container">
+        <div class="session-date">
+          <span class="session-label">Дата</span>
+          <div class="session-date-block">
+            
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">27</span>
+              <span class="session-week">Пт</span>
+            </div>
+
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">28</span>
+              <span class="session-week">Сб</span>
+            </div>
+            
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">29</span>
+              <span class="session-week">Вс</span>
+            </div>
+
+            <div class="session-date-item">
+              <div class="span session-month">АПР</div>
+              <span class="session-day">30</span>
+              <span class="session-week">Пн</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.date -->
+        <div class="session-cinema">
+          <span class="session-label">Кинотеатр</span>
+          <select name="cinema" class="select select-cinema">
+            <option value="Синема Парк, ул. Максима Горького 70, ТЦ "Гудвин"">Синема Парк, ул. Максима Горького 70, ТЦ "Гудвин"</option>
+            <option value="Атмос Синема, Чаркова 60, ТЦ "Сити Молл"">Атмос Синема, Чаркова 60, ТЦ "Сити Молл"</option>
+            <option value="Каро 6, Московский Тракт 118, ТЦ "Колумб"">Каро 6, Московский Тракт 118, ТЦ "Колумб"</option>
+            <option value="Киномакс, Дмитрия Менделеева 1, ТЦ "Кристалл"">Киномакс, Дмитрия Менделеева 1, ТЦ "Кристалл"</option>
+          </select>
+        </div>
+        <!-- /.cinema -->
+        <div class="session-time">
+          <span class="session-label">Время</span>
+          <select name="cinema" class="select select-time">
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+          </select>
+        </div>
+        <!-- /.session-time -->
+    </div>
+    <!-- /.session -->
   </header>
 </body>
 </html>

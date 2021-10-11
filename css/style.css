@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  min-height: 100vh;
+  padding-bottom: 60px;
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
   url(../img/bg.jpg) no-repeat center top / cover;
 }
@@ -202,6 +202,11 @@ body {
   margin-bottom: 40px;
 }
 
+.scheme-svg {
+  max-width: 1170px;
+
+}
+
 .scheme path:not(.light) {
   fill: rgba(255, 255, 255, 0.2);
   cursor: pointer;
@@ -228,6 +233,7 @@ body {
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   max-width: 1024px;
+  width: 90%;
   margin: auto;
   padding-top: 22px;
   padding-bottom: 38px;
@@ -273,4 +279,45 @@ body {
   line-height: 21px;
   padding: 24px 52px;
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .select-cinema {
+    width: 90%;
+    
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .session {
+    flex-wrap: wrap;
+  }
+  .session-date {
+    flex-basis: 70%;
+  }
+  .session-time {
+    order: 2;
+  }
+  .session-cinema {
+    order: 3;
+    margin-top: 40px;
+  }
+  .menu-item {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 560px;
+  }
+  .session-time {
+    margin-top: 40px;
+  }
 }

@@ -1,2 +1,6 @@
-# cinema
-Учебный проект Glo Academy
+# Cinema - Учебный проект Glo Academy
+## Проект выполнил: Бандура Петр
+## Технологии:
+- html
+- css
+- javascript

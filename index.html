@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 </head>
 <body>
   <header class="header">
@@ -18,6 +19,17 @@
         <img src="img/logo.svg" alt="logo">
         </a>
         <nav class="nav">
+          <button class="m-menu">
+            <svg width="15" 
+            height="9" 
+            viewBox="0 0 15 9" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+              <line y1="4.5" x2="15" y2="4.5" stroke="white"/>
+              <line y1="8.5" x2="15" y2="8.5" stroke="white"/>
+              </svg>              
+          </button>
           <ul class="menu">
             <li class="menu-item">
               <a href="#" class="menu-link">Главная</a>
@@ -59,7 +71,7 @@
         <!-- /.film-details -->
       </div>
       <!-- /.film-info -->
-      <a href="https://yandex.ru/video/preview/?text=%D0%BC%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D0%B8%20%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D1%82%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80&path=wizard&parent-reqid=1633942178812354-18198237926858406878-sas2-0624-sas-l7-balancer-8080-BAL-8423&wiz_type=vital&filmId=15195646050484047558" class="film-trailer">
+      <a data-fancybox="video-gallery"data-src="https://www.youtube.com/watch?v=FeJKZMFJ7NA"href="#" class="film-trailer">
         <svg 
         width="100" 
         height="100" 
@@ -339,5 +351,6 @@
   </div>
   <!-- /.price -->
   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
